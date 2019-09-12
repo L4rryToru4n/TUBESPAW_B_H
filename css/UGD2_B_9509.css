@@ -1,0 +1,59 @@
+ body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helveti	ca, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+/*  
+.bg-image {
+  background-image: url("hospitality-hdr.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 130%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text{
+ 
+  font-weight: bold;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#bg-title{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.2);
+  font-weight: bold;
+  position: absolute;
+  text-align:center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 150%;
+  width: 100%;
+  padding: 30px;
+ margin-top: 40px;
+}
+ 
+.container
+{
+    position: relative;
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+}
+
+.radio-options
+{
+	padding-right: 10px;
+} */
