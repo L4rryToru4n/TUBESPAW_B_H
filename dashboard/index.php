@@ -1,6 +1,6 @@
 <?php include '../layout/dashboard.php' ;?>
 <div id="dashboardData">
-    This is Dashboard
+<!-- <iframe height="1000px" width="100%" src="UGD2_B_9509_2.html" name="iframe_a"></iframe> -->
 </div>
 <div class="hamburgerbar">
 		<a href="#" onclick="hamburgerFunc()">

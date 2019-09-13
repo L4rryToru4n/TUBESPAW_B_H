@@ -12,6 +12,9 @@ echo '<!DOCTYPE html>
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>Dashboard</title>
 </head>
 <body>
@@ -46,6 +49,25 @@ echo '<!DOCTYPE html>
 			</div>
 		</div>
 		<div id="navbar">
+					<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+
+				</div>
+				<ul class="nav navbar-nav">
+				<li class="active"><a href=".\home.html">Home</a></li>
+				<li><a href=".\about.html">About Us</a></li>
+				</li>
+				<li><a href=".\gallery.html">Gallery</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href=".\contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div>
+			<a href=# class="btn btn-default" role="button">Join Us</a>
+			</div>
+			</nav>
 			<div class="searchbar">
 				<input id="searchInput" type="text" placeholder="Search Data" onkeyup="displaySearch(event)">
 			</div>
