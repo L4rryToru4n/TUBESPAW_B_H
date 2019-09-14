@@ -10,7 +10,7 @@ if(isset($_POST['login'])){
         echo '<script>alert("Email not found"); window.location = "../login_page.php"</script>';
     }else{
         $user = mysqli_fetch_assoc($query);
-        if(password_verify($password,$user['katasandi'])){
+        if(password_verify($password,$user['password'])){
             session_start();
             $_SESSION['isLogin'] = true;
             $_SESSION['user'] = $user;
