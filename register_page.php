@@ -30,21 +30,40 @@
                     <div class="field">                     
                     <p class="control">                     
                     <label class="label">Name</label>                         
-                        <input class="input" type="text" name="name" placeholder="Name">                     
+                        <input class="input" type="text" name="name" id="name" placeholder="Name" value="<?php echo $name; ?> ">                     
                     </p>                     
                     </div>                     
                     <div class="field">                     
                     <p class="control">                     
                     <label class="label">Email</label>                         
-                        <input class="input" type="email" name="email" placeholder="Email">
-                        </p>                     
-                        </div>                     
+                    <input class="input" type="email" name="email" id="email"placeholder="Email" value="<?php echo $email; ?> ">
+                    </p>                     
+                    </div>
+                    <div class="field">                     
+                    <p class="control">                         
+                        Jenis Kelamin                     
+                        <label><input class="radio" type="radio" name="jeniskelamin" id="jenis_kelamin" value="<?php echo $jeniskelamin; ?> ">Pria</label> 
+                        <label><input class="radio" type="radio" name="jeniskelamin" id="jenis_kelamin" value="<?php echo $jeniskelamin; ?> ">Wanita</label>                 
+                    </p>                     
+                    </div>
+                    <div class="field">                     
+                    <p class="control">                         
+                        <label class="label">Nomor Telepon</label>                         
+                        <input class="input" type="text" name="nomortelp" placeholder="Nomor Telepon" id="nomortelp" value="<?php echo $nomortelp; ?> ">                     
+                    </p>                     
+                    </div>
+                    <div class="field">                     
+                    <p class="control">                         
+                        <label class="label">Tanggal Lahir</label>                         
+                        <input class="input" type="date" name="tanggallahir" id="tanggallahir" value="<?php echo $tanggallahir; ?> ">                     
+                    </p>                     
+                    </div>                     
                         <div class="field">                     
                         <p class="control">                         
-                            <label class="label">Password</label>                         
-                            <input class="input" type="password" name="password" placeholder="Password">                     
+                            <label class="label">Kata Sandi</label>                         
+                            <input class="input" type="password" name="password" placeholder="Password"  value="<?php echo $password; ?> ">                     
                         </p>                     
-                        </div>                 
+                        </div>                       
                     </div>                 
                     <footer class="card-footer"> 
                     <input name="store" type="submit"  value="Sign Up" style="padding: 0px !important" class="card-footer-item button is-warning">                 

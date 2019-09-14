@@ -4,13 +4,13 @@ if(isset($_POST['login'])){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $query = mysqli_query($con,"SELECT * FROM users WHERE email = '$email' Limit 1") or die(mysqli_error($con));
+    $query = mysqli_query($con,"SELECT * FROM data_users WHERE email = '$email' Limit 1") or die(mysqli_error($con));
 
     if(mysqli_num_rows($query)==0){
         echo '<script>alert("Email not found"); window.location = "../login_page.php"</script>';
     }else{
         $user = mysqli_fetch_assoc($query);
-        if(password_verify($password,$user['Password'])){
+        if(password_verify($password,$user['katasandi'])){
             session_start();
             $_SESSION['isLogin'] = true;
             $_SESSION['user'] = $user;
