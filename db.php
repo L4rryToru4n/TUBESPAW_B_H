@@ -2,7 +2,7 @@
     $dbServer = "localhost";
     $username = "root";
     $password = "";
-    $dbName = "jualsapi.com";
+    $dbName = "jualsapi_com";
     $con = mysqli_connect($dbServer, $username, $password, $dbName);
     if(mysqli_connect_errno())
     {
