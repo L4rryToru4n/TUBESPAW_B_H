@@ -14,7 +14,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color: #8D8741;
 }
 
 .topnav a {
@@ -33,7 +33,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #2196F3;
+  background-color: #C2B73E;
   color: white;
 }
 
@@ -79,7 +79,20 @@ body {
     border: 1px solid #ccc;  
   }
 }
-<!--dropdown menu -->
+
+/* MENU RATA KANAN */
+
+#menu-kanan ul {
+  float: right;
+  list-style: none;
+  background-color: #8D8741
+}
+#menu-kanan ul li {
+    text-align: center;
+  float: left;
+  background-color: #8D8741
+}
+/* DROPDOWN MENU */
 
 
 
@@ -87,8 +100,15 @@ body {
 </style>
 </head>
 <body>
-
+  <div id="menu-kanan">
+  <ul>
+      <li><a href="#Tentang">Tentang Kami | </a><li>
+      <li><a href="#Pusat">Pusat Bantuan | </a><li>
+      <li><a href="#Hub">Hubungi Kami</a><li>
+  </ul>
+</div>
 <div class="topnav">
+    
     <a class="active" href="#home">Home</a>
   <div class="search-container">
     <form action="/action_page.php">
