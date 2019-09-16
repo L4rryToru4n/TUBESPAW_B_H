@@ -5,81 +5,70 @@ if(!$_SESSION['isLogin']){
 }else{
     include('../db.php');
 }
-echo '<!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<title>Dashboard</title>
+
+  <style>
+    .navbar-brand
+    {
+      background-image: url("logo.png");
+    }
+  </style>
 </head>
 <body>
-	<div class="backgroundAll"></div>
-		<div id="sidebar">
-			<div class="sideheader">
-				<div class="name">
-					<h1>Company Logo</h1>
-					<p>Company Name</p>
-				</div>
-				<div class="hamburgerbar">
-					<a href="#" onclick="hamburgerFunc()">
-						<div>
-							<div class="bar topbar"></div>
-							<div class="bar middlebar"></div>
-							<div class="bar bottombar"></div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="sidebody">
-				<div class="sidebodypart">
-					<ul>
-						<li id="dasboardTab"><a href="./"><p>Dashboard</p></a></li>
-						<li id="userTab"><a href="./formpeserta.php"><p>User Manager</p></a></li>
-						<li id="empTab"><a href="./formpegawai.php"><p>Employee Manager</p></a></li>
-						<li id="listUser"><a href="./listPeserta.php"><p>List User</p></a></li>
-						<li id="listBuku"><a href="./listBuku.php"><p>List Buku</p></a></li>
-                   		<li id="logout"><a href="../proses/prosesLogout.php"><p>Logout</p></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="navbar">
-					<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
+<div class="container">
+  <h3>Colored Navbar</h3>
+  <p>Use any of the .bg-color classes to add a background color to the navbar.</p>
+  <p>Tip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color.</p>
+</div>
 
-				</div>
-				<ul class="nav navbar-nav">
-				<li class="active"><a href=".\home.html">Home</a></li>
-				<li><a href=".\about.html">About Us</a></li>
-				</li>
-				<li><a href=".\gallery.html">Gallery</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-				<li><a href=".\contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-			<div>
-			<a href=# class="btn btn-default" role="button">Join Us</a>
-			</div>
-			</nav>
-			<div class="searchbar">
-				<input id="searchInput" type="text" placeholder="Search Data" onkeyup="displaySearch(event)">
-			</div>
-			<div class="barinfo">
-			<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-				<div class="dropdown-content">
-				  <a href="#">Link 1</a>
-				  <a href="#">Link 2</a>
-				  <a href="#">Link 3</a>
-				</div>
-			  </li>
-			</div>
-		</div>'
-?>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="navbar-brand" href="index.php">
+      <img src="..\layout\logo.png" alt="logo" style="width:40px;">
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item" style="margin-right:90px">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+
+    <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit" style="margin-right:120px">Search</button>
+  </form>
+<br>
+
+	<div class="btn-group">
+    <button type="button" class="btn btn-primary" style="margin-left:auto">Home</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"> 
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+    </div>
+  
+	</div>
+  </ul>
+</nav>
+
+
+			
+		</div>
