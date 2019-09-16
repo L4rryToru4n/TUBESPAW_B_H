@@ -19,7 +19,7 @@ elseif($_GET['sort'] == 'added')
     $sql .= " ORDER BY DateAdded";
 }
 
-$>
+?>
 
 // Comments
 // Notice that you shouldn't take the $_GET value directly and append it to your query. 
