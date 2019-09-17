@@ -49,36 +49,21 @@
     margin-right: 10px;
 }
 
-<<<<<<< HEAD
-#sidebar .sideheader .hamburgerbar a .bar {
-    transition: all 1s;
-    background: white;
-    height: 3px;
-    margin-bottom: 3px;
-=======
 #sidebar .sideheader .hamburgerbar a .bar{
 	transition: all 1s;
 	background: rgb(255, 255, 255);
 	height: 3px;
 	margin-bottom: 3px;
->>>>>>> e3acc528bbaa3343df4d0d2824ee73bc11ff22eb
 }
 
 #sidebar .sidebody .sidebodypart {
     border-top: solid 3px #2f3a43;
 }
 
-<<<<<<< HEAD
-#sidebar .sidebody . sidebodypart ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-=======
 #sidebar .sidebody .sidebodypart ul{
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
->>>>>>> e3acc528bbaa3343df4d0d2824ee73bc11ff22eb
 }
 
 #sidebar .sidebody .sidebodypart ul li {
