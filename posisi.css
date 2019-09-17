@@ -14,6 +14,49 @@
 
 .navbar{
    background-color: rgb(140,136,45);
+   margin-right: 0px;
+}
+
+.navbar .btn-group{
+   background-color: rgb(140, 136, 45);
+   margin-right: auto;
+}
+
+.navbar .btn-group .btn
+{
+   background-color: #C2B73E;
+   color : white;
+}
+
+.navbar .dropdown-menu
+{
+   background-color: #C2B73E;
+   color : black;
+}
+
+.navbar .dropdown-menu .dropdown-item
+{
+   color: white;
+}
+.navbar .dropdown-menu .dropdown-item:hover
+{
+   background-color: #B0A100;
+   color: white;
+}
+   
+.navbar .form-inline .btn
+{
+   background-color:#BC986A;
+   color : white;
+   margin-right: 920px;
+   padding: 5px 10px 5px 10px;
+}
+
+.navbar .form-inline .form-control
+{
+   text-align : left;
+   margin : 0px 0px 0px 0px;
+   padding: 0px 100px 0px 30px;
 }
 
 .deret_link{
