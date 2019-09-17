@@ -5,8 +5,8 @@ if(!$_SESSION['isLogin']){
 }else{
     include('../db.php');
 }
-?>
-<!DOCTYPE html>
+
+echo' <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -27,48 +27,29 @@ if(!$_SESSION['isLogin']){
   </style>
 </head>
 <body>
-<div class="container">
-  <h3>Colored Navbar</h3>
-  <p>Use any of the .bg-color classes to add a background color to the navbar.</p>
-  <p>Tip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color.</p>
-</div>
+  <nav class="navbar">
+                      <a class="navbar-brand" href="./">
+                        <img src="https://cdn.pixabay.com/photo/2016/06/28/17/26/cow-1485012_960_720.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                      </a>
+                      <div class="btn-group">
+                          <button type="button" class="btn">Home</button>
+                          <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"> 
+                          </button>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Home</a>
+                              <a class="dropdown-item" href="#">Profil</a>
+                              <a class="dropdown-item" href="#">Sapi Saya</a>
+                          </div>            
+                      </div>
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="navbar-brand" href="index.php">
-      <img src="..\layout\logo.png" alt="logo" style="width:40px;">
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item" style="margin-right:90px">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-
-    <form class="form-inline" action="/action_page.php">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-success" type="submit" style="margin-right:120px">Search</button>
-  </form>
-<br>
-
-	<div class="btn-group">
-    <button type="button" class="btn btn-primary" style="margin-left:auto">Home</button>
-    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"> 
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Link 1</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-    </div>
-  
-	</div>
-  </ul>
-</nav>
-
-
-			
-		</div>
+                      <form class="form-inline" action="/action_page.php">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Pencarian">
+                          <button class="btn" type="submit">Search</button>
+                      </form>
+              </nav>
+              <div class="deret_link">
+                      <a href="#" style="color: white">Tentang Kami</a> <a style="color: white"> | </a>
+                      <a href="#" style="color: white">Pusat Bantuan</a>  <a style="color: white">  | </a>
+                      <a href="#" style="color: white">Hubungi Kami</a>
+              </div>'
+?>
