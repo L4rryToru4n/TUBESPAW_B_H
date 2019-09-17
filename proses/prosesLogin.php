@@ -2,13 +2,8 @@
 if(isset($_POST['login_jualsapi'])){
     include('../db.php');
 
-<<<<<<< HEAD
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-=======
     $email = $_POST['email_jualsapi'];
     $password = $_POST['password_jualsapi'];
->>>>>>> e3acc528bbaa3343df4d0d2824ee73bc11ff22eb
     $query = mysqli_query($con,"SELECT * FROM data_users WHERE email = '$email' Limit 1") or die(mysqli_error($con));
 
     if(mysqli_num_rows($query)==0){
