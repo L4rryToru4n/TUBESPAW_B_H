@@ -19,9 +19,9 @@
             </div>
 
 <!--
-                <img src="https://cdn.pixabay.com/photo/2016/06/28/17/26/cow-1485012_960_720.png">
+                <img src="https://cdn.pixabay.com/photo/2016/06/28/17/26/cow-1485012_960_720.png" width="300" height="300">
             -->
-                <img src="./mockup/LOGO.png">
+                <img src="./mockup/LOGO.png" width="320" height="300" >
             </a>                 
     </body>
 </html>
