@@ -24,9 +24,9 @@
                     </a>-->
             </nav>
             <div class="deret_link">
-                    <a href="#" style="color: white">Tentang Kami</a> <a style="color: white"> | </a>
-                    <a href="#" style="color: white">Pusat Bantuan</a>  <a style="color: white">  | </a>
-                    <a href="#" style="color: white">Hubungi Kami</a>
+                    <a href="./about.html" style="color: white">Tentang Kami</a> <a style="color: white"> | </a>
+                    <a href="./help.html" style="color: white">Pusat Bantuan</a>  <a style="color: white">  | </a>
+                    <a href="./contact.html" style="color: white">Hubungi Kami</a>
             </div>
 
             <div class="kotak_form">
