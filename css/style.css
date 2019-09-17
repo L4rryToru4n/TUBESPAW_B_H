@@ -79,15 +79,9 @@
     border-left: solid 3px #17b1b8;
 }
 
-<<<<<<< HEAD
-#sidebar .sidebody .sidebodypart .isActive {
-    background: #212f32;
-    boorder-left: solid 3px #17b1b8;
-=======
 #sidebar .sidebody .sidebodypart .isActive{
 	background: #212f32;
 	border-left: solid 3px #17b1b8;
->>>>>>> e3acc528bbaa3343df4d0d2824ee73bc11ff22eb
 }
 
 #sidebar .sidebody .sidebodypart ul li a {
@@ -104,19 +98,6 @@
     margin: 0px;
 }
 
-<<<<<<< HEAD
-#navbar {
-    transition: all 1s;
-    position: fixed;
-    margin-left: 260px;
-    display: flex;
-    background: #f8f9fe;
-    height: 65px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    padding: 0px 30px;
-=======
 #navbar{
 	transition: all 1s;
 	position: fixed;
@@ -128,7 +109,6 @@
 	right: 0px;
 	left: 0px;
 	padding: 0px 30px;
->>>>>>> e3acc528bbaa3343df4d0d2824ee73bc11ff22eb
 }
 
 #navbar .searchbar {
