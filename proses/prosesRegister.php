@@ -1,12 +1,15 @@
 <?php
-if(isset($_POST['store'])){
+if(isset($_POST['simpan_jualsapi'])){
     include('../db.php');
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $name = $_POST['nama_jualsapi'];
+    $email = $_POST['email_jualsapi'];
+    $jeniskelamin = $_POST['jk_jualsapi'];
+    $notelp = $_POST['notelp_jualsapi'];
+    $tgllahir = $_POST['tgllahir_jualsapi'];
+    $password = password_hash($_POST['password_jualsapi'], PASSWORD_DEFAULT);
 
-    $input = mysqli_query($con,"INSERT INTO users(name,email,password) VALUES('$name','$email','$password')")or die(mysqli_error($con));
+    $input = mysqli_query($con,"INSERT INTO data_users(name,email,jeniskelamin,nomortelp,tanggallahir,password) VALUES('$name','$email', '$jeniskelamin', '$notelp', '$tgllahir', '$password')")or die(mysqli_error($con));
     if($input){
         echo '<script>alert("succes"); window.location = "../login_page.php"</script>';
     }else{
