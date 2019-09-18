@@ -73,17 +73,11 @@
    margin-left: 1050px;
    border-radius: 5px;
    background-color: rgb(245, 245, 245);
-   padding: 60px;   
+   padding: 30px;   
 }
 
 .posisi_form{
    width: 350px;
-   height: 300px;
-   margin-left: 900;
-   margin-top: 50px;
-   margin-bottom: 70px;
-   margin-right: 60px;
-   
 }
 
 .button_form{
@@ -97,8 +91,77 @@
 
 .image_login
 {
-   margin-top: -600px;
-   margin-left: 300px;
-   width: 20%;
-   height: 20%;
+   width: 100%;
 }
+
+.container{
+   width: 650px;
+   position: absolute;
+   top: 100px;
+   left: 200px;
+}
+
+.container p1 {
+
+   font-size: 25pt;
+   font-weight: bold;
+}
+
+
+.container_beranda{
+   margin: 20px;
+   width: 1500px;
+   border: solid;
+}
+.container_beranda_logo{
+   border: solid;
+   border-color: red;
+   width: 200px;
+   float: left;
+   margin: 20px;
+}
+.container_beranda_atas{
+   border: solid;
+   border-color: red;
+   width: 1200px;
+   height: 200px;
+   float: left;
+
+}
+.container_beranda_bawah{
+   border: solid;
+   border-color: red;
+   height: 20px;
+   margin: 30px;
+
+}
+.body{
+   background-color: red;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
