@@ -1,14 +1,14 @@
-<?php include '..\layout\dashboard.php'; ?>
-
-<html>
+<?php include '../layout/dashboard.php'; ?>
 
 <style>
-  #rekomendasi_page{
-	  margin-top: 65px;
-	  padding: 20px;
-  }
+
 </style>
-  <div id="rekomendasi_page">
+  <div id="dashboardData">
     <iframe height="1000px" width="100%" src="sapiRekomendasi.html" name="iframe_rekomendasi" frameBorder="0"></iframe>
   </div>
+  </body>
+<script src="../script/script.js"></script>
+<script>
+    var elm = documentgetElementById("dashboardTab").classList.Add("isActive")
+</script>
 </html>

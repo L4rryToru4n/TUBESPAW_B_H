@@ -24,6 +24,23 @@ echo' <!DOCTYPE html>
     {
       background-image: url("logo.png");
     }
+
+    #rekomendasi_page{
+      margin-top: 65px;
+      padding: 20px;
+    }
+
+    #dashboardData{
+      transition: all 1s;
+      margin-left: 252px;
+      margin-top: 65px;
+      padding: 20px;
+      }
+      
+      .animationDashboardData{
+      margin-left: 100px !important;
+      transition: all 1s;
+    }
   </style>
 </head>
 <body>

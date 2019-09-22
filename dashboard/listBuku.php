@@ -15,18 +15,25 @@
     <table class="table">    
     <thead class="thead-dark">        
         <tr>                 
-            <th>No.</th>                 
-            <th>Nama</th>                 
-            <th>Email</th>                              
-            <th>Nomor Handphone</th>                 
-            <th>Jenis Kelamin</th> 
-            <th>Pendidikan</th>
-            <th>IPK</th>
-            <th>Cumlaude</th>
-            <th>Alamat</th>
-            <th>Kota</th>                
-            <th>Pengaturan</th>             
+            <th>Ras</th>                 
+            <th>Harga</th>
         </tr>
+        <tr>
+            <th>Jenis Sapi</th>                              
+            <th>Umur</th> 
+        </tr>                 
+        <tr>
+            <th>Jenis Kelamin</th> 
+            <th>Berat</th>
+        </tr>
+        <tr>
+            <th>Warna</th>
+            <th>Kuantitas</th>
+        </tr>           
+        <tr>
+            <th>Deskripsi</th>    
+        </tr>
+
     </thead>
     <?php         
     

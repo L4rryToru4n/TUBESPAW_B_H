@@ -37,9 +37,9 @@
                                 <label for="exampleInputPassword1">Kata Sandi</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan Sandi"  name="password_jualsapi">
                             </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Konfirmasi Sandi"  name="password_jualsapi">    
-                            </div>
+                            <!-- <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Konfirmasi Sandi"  name="password_konfirm">    
+                            </div> -->
                             <div class="form-group">
                                     <label for="exampleInputPassword2">Jenis Kelamin</label>
                                 <br>
@@ -57,92 +57,69 @@
                             <label for="inputDate">Tanggal Lahir</label>
 
                             <div class="form-group form-inline">
-                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                            <option selected>Tanggal</option>
-                                            <option value="11" name="tgllahir_jualsapi">1</option>
-                                            <option value="12" name="tgllahir_jualsapi">2</option>
-                                            <option value="13" name="tgllahir_jualsapi">3</option>
-                                            <option value="14" name="tgllahir_jualsapi">4</option>
-                                            <option value="15" name="tgllahir_jualsapi">5</option>
-                                            <option value="16" name="tgllahir_jualsapi">6</option>
-                                            <option value="17" name="tgllahir_jualsapi">7</option>
-                                            <option value="18" name="tgllahir_jualsapi">8</option>
-                                            <option value="19" name="tgllahir_jualsapi">9</option>
-                                            <option value="20" name="tgllahir_jualsapi">10</option>
-                                            <option value="21" name="tgllahir_jualsapi">11</option>
-                                            <option value="22" name="tgllahir_jualsapi">12</option>
-                                            <option value="23" name="tgllahir_jualsapi">13</option>
-                                            <option value="24" name="tgllahir_jualsapi">14</option>
-                                            <option value="25" name="tgllahir_jualsapi">15</option>
-                                            <option value="26" name="tgllahir_jualsapi">16</option>
-                                            <option value="27" name="tgllahir_jualsapi">17</option>
-                                            <option value="28" name="tgllahir_jualsapi">18</option>
-                                            <option value="29" name="tgllahir_jualsapi">19</option>
-                                            <option value="30" name="tgllahir_jualsapi">20</option>
-                                            <option value="31" name="tgllahir_jualsapi">21</option>
-                                            <option value="32" name="tgllahir_jualsapi">22</option>
-                                            <option value="33" name="tgllahir_jualsapi">23</option>
-                                            <option value="34" name="tgllahir_jualsapi">24</option>
-                                            <option value="35" name="tgllahir_jualsapi">25</option>
-                                            <option value="36" name="tgllahir_jualsapi">26</option>
-                                            <option value="37" name="tgllahir_jualsapi">27</option>
-                                            <option value="38" name="tgllahir_jualsapi">28</option>
-                                            <option value="39" name="tgllahir_jualsapi">29</option>
-                                            <option value="40" name="tgllahir_jualsapi">30</option>
-                                            <option value="41" name="tgllahir_jualsapi">31</option>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="tgllahir_jualsapi_hari">
+                                            <option value="Pilih Tanggal" selected>Tanggal</option>
+                                            <?php
+                                            for($i=date('Y'); $i>1985; $i--) {
+                                                $birthdayYear = '';
+                                                $selected = '';
+                                                if ($birthdayYear == $i) $selected = ' selected="selected"';
+                                                print('<option value="'.$i.'"'.$selected.'>'.$i.'</option>'."\n");
+                                            }
+                                        ?>
                                           </select>
-                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="tgllahir_jualsapi_bulan">
                                         <option selected>Bulan</option>
-                                        <option value="42" name="tgllahir_jualsapi">Januari</option>
-                                        <option value="43" name="tgllahir_jualsapi">Februari</option>
-                                        <option value="44" name="tgllahir_jualsapi">Maret</option>
-                                        <option value="45" name="tgllahir_jualsapi">April</option>
-                                        <option value="46" name="tgllahir_jualsapi">Mei</option>
-                                        <option value="47" name="tgllahir_jualsapi">Juni</option>
-                                        <option value="48" name="tgllahir_jualsapi">Juli</option>
-                                        <option value="49" name="tgllahir_jualsapi">Agustus</option>
-                                        <option value="50" name="tgllahir_jualsapi">September</option>
-                                        <option value="51" name="tgllahir_jualsapi">Oktober</option>
-                                        <option value="52" name="tgllahir_jualsapi">November</option>
-                                        <option value="53" name="tgllahir_jualsapi">Desember</option>
+                                        <option value="1">Januari</option>
+                                        <option value="2" name="tgllahir_jualsapi">Februari</option>
+                                        <option value="3" name="tgllahir_jualsapi">Maret</option>
+                                        <option value="4" name="tgllahir_jualsapi">April</option>
+                                        <option value="5" name="tgllahir_jualsapi">Mei</option>
+                                        <option value="6" name="tgllahir_jualsapi">Juni</option>
+                                        <option value="7" name="tgllahir_jualsapi">Juli</option>
+                                        <option value="8" name="tgllahir_jualsapi">Agustus</option>
+                                        <option value="9" name="tgllahir_jualsapi">September</option>
+                                        <option value="10" name="tgllahir_jualsapi">Oktober</option>
+                                        <option value="11" name="tgllahir_jualsapi">November</option>
+                                        <option value="12" name="tgllahir_jualsapi">Desember</option>
                                     </select>
-                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="tgllahir_jualsapi_tahun">
                                             <option selected>Tahun</option>
-                                            <option value="85" name="tgllahir_jualsapi">1985</option>
-                                            <option value="86" name="tgllahir_jualsapi">1986</option>
-                                            <option value="87" name="tgllahir_jualsapi">1987</option>
-                                            <option value="88" name="tgllahir_jualsapi">1988</option>
-                                            <option value="89" name="tgllahir_jualsapi">1989</option>
-                                            <option value="90" name="tgllahir_jualsapi">1990</option>
-                                            <option value="91" name="tgllahir_jualsapi">1991</option>
-                                            <option value="92" name="tgllahir_jualsapi">1992</option>
-                                            <option value="93" name="tgllahir_jualsapi">1993</option>
-                                            <option value="94" name="tgllahir_jualsapi">1994</option>
-                                            <option value="95" name="tgllahir_jualsapi">1995</option>
-                                            <option value="96" name="tgllahir_jualsapi">1996</option>
-                                            <option value="97" name="tgllahir_jualsapi">1997</option>
-                                            <option value="98" name="tgllahir_jualsapi">1998</option>
-                                            <option value="99" name="tgllahir_jualsapi">1999</option>
-                                            <option value="100" name="tgllahir_jualsapi">2000</option>
-                                            <option value="101" name="tgllahir_jualsapi">2001</option>
-                                            <option value="102" name="tgllahir_jualsapi">2002</option>
-                                            <option value="103" name="tgllahir_jualsapi">2003</option>
-                                            <option value="104" name="tgllahir_jualsapi">2004</option>
-                                            <option value="105" name="tgllahir_jualsapi">2005</option>
-                                            <option value="106" name="tgllahir_jualsapi">2006</option>
-                                            <option value="107" name="tgllahir_jualsapi">2007</option>
-                                            <option value="108" name="tgllahir_jualsapi">2008</option>
-                                            <option value="109" name="tgllahir_jualsapi">2009</option>
-                                            <option value="110" name="tgllahir_jualsapi">2010</option>
-                                            <option value="111" name="tgllahir_jualsapi">2011</option>
-                                            <option value="112" name="tgllahir_jualsapi">2012</option>
-                                            <option value="113" name="tgllahir_jualsapi">2013</option>
-                                            <option value="114" name="tgllahir_jualsapi">2014</option>
-                                            <option value="115" name="tgllahir_jualsapi">2015</option>
-                                            <option value="116" name="tgllahir_jualsapi">2016</option>
-                                            <option value="117" name="tgllahir_jualsapi">2017</option>
-                                            <option value="118" name="tgllahir_jualsapi">2018</option>
-                                            <option value="119" name="tgllahir_jualsapi">2019</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1986" name="tgllahir_jualsapi">1986</option>
+                                            <option value="1987" name="tgllahir_jualsapi">1987</option>
+                                            <option value="1988" name="tgllahir_jualsapi">1988</option>
+                                            <option value="1989" name="tgllahir_jualsapi">1989</option>
+                                            <option value="1990" name="tgllahir_jualsapi">1990</option>
+                                            <option value="1991" name="tgllahir_jualsapi">1991</option>
+                                            <option value="1992" name="tgllahir_jualsapi">1992</option>
+                                            <option value="1993" name="tgllahir_jualsapi">1993</option>
+                                            <option value="1994" name="tgllahir_jualsapi">1994</option>
+                                            <option value="1995" name="tgllahir_jualsapi">1995</option>
+                                            <option value="1996" name="tgllahir_jualsapi">1996</option>
+                                            <option value="1997" name="tgllahir_jualsapi">1997</option>
+                                            <option value="1998" name="tgllahir_jualsapi">1998</option>
+                                            <option value="1999" name="tgllahir_jualsapi">1999</option>
+                                            <option value="2000" name="tgllahir_jualsapi">2000</option>
+                                            <option value="2001" name="tgllahir_jualsapi">2001</option>
+                                            <option value="2002" name="tgllahir_jualsapi">2002</option>
+                                            <option value="2003" name="tgllahir_jualsapi">2003</option>
+                                            <option value="2004" name="tgllahir_jualsapi">2004</option>
+                                            <option value="2005" name="tgllahir_jualsapi">2005</option>
+                                            <option value="2006" name="tgllahir_jualsapi">2006</option>
+                                            <option value="2007" name="tgllahir_jualsapi">2007</option>
+                                            <option value="2008" name="tgllahir_jualsapi">2008</option>
+                                            <option value="2009" name="tgllahir_jualsapi">2009</option>
+                                            <option value="2010" name="tgllahir_jualsapi">2010</option>
+                                            <option value="2011" name="tgllahir_jualsapi">2011</option>
+                                            <option value="2012" name="tgllahir_jualsapi">2012</option>
+                                            <option value="2013" name="tgllahir_jualsapi">2013</option>
+                                            <option value="2014" name="tgllahir_jualsapi">2014</option>
+                                            <option value="2015" name="tgllahir_jualsapi">2015</option>
+                                            <option value="2016" name="tgllahir_jualsapi">2016</option>
+                                            <option value="2017" name="tgllahir_jualsapi">2017</option>
+                                            <option value="2018" name="tgllahir_jualsapi">2018</option>
+                                            <option value="2019" name="tgllahir_jualsapi">2019</option>
                                     </select>
                             </div>
                             <button type="submit" class="btn button_form" name="simpan_jualsapi">Daftar</button>

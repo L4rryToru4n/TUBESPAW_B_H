@@ -1,3 +1,4 @@
+<?php include '../layout/dashboard.php'; ?>
 <!DOCTYPE html>
 
 <html>
@@ -5,6 +6,9 @@
 <style>
 div.gallery {
   border: 1px solid #ccc;
+  margin-left:10px;
+  bottom: auto;
+  margin-top:350px;
 }
 
 div.gallery:hover {
@@ -29,6 +33,7 @@ div.desc {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
+  
 }
 
 @media only screen and (max-width: 700px) {
@@ -53,13 +58,14 @@ div.desc {
 </head>
 <body>
 
+<!-- 
 <h2>Responsive Image Gallery</h2>
-<h4>Resize the browser window to see the effect.</h4>
+<h4>Resize the browser window to see the effect.</h4> -->
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href=".\detailBarang.php">
-      <img src="..\mockup\AboutUs.jpg" alt="About Us" width="600" height="400">
+      <img src="..\images\1.jpg" alt="About Us" width="600" height="400">
     </a>
     <div class="desc">Keterangan Sapi</div>
   </div>
@@ -68,37 +74,38 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    <a target="_blank" href=".\detailBarang.php">
+      <img src="..\images\2.jpg" alt="Forest" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Keterangan Sapi</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    <a target="_blank" href=".\detailBarang.php">
+      <img src="..\images\3.jpg" alt="Northern Lights" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Keterangan Sapi</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    <a target="_blank" href=".\detailBarang.php">
+      <img src="..\images\4.jpg" alt="Mountains" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Keterangan Sapi</div>
   </div>
 </div>
 
 <div class="clearfix"></div>
 
+<!-- 
 <div style="padding:6px;">
   <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
   <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
+</div> -->
 
 </body>
 </html>

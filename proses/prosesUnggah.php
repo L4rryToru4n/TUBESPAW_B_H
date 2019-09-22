@@ -1,8 +1,11 @@
 
 <?php
-// include('../db.php');
+ include('../db.php');
+ 
+$id = $_POST['id_jualsapi'];
+mkdir("uploads/1/", 0700);
 
-$target_dir = "uploads/";
+$target_dir = "uploads/1/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
