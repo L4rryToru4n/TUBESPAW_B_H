@@ -53,7 +53,7 @@
                         </form>
             </div> 
             <a >
-            <img src="./mockup/LOGO.png"  width="320px" height="300 px" >
+            <img src="mockup/DaftarLogo.png" style="width: 682px;margin-right: -2px;padding-right: 3px;margin-top: -235px;margin-left: 214px;">
                 <!--
                 <img src="https://cdn.pixabay.com/photo/2016/06/28/17/26/cow-1485012_960_720.png" class = "image_login">
                 -->

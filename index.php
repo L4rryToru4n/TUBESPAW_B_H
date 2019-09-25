@@ -28,11 +28,11 @@
     </body>
 </html>
 -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
+    
 <link rel="shortcut icon" href="./mockup/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
 </head>
 
 <body>
@@ -52,8 +54,8 @@
         <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(193, 182, 58);height: 62px;font-size: 15px;margin: -29px;width: 1628px;">
             <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1" style="width: 1208px;height: 41px;min-width: 12px;min-height: 4px;margin-top: 4px;margin-right: -221px;margin-left: -190px;">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="./">HOME</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Penjualan</a><a class="dropdown-item" role="presentation" href="#">Profil</a><a class="dropdown-item" role="presentation" href="#">Menu 3</a>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">HOME</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="./sapiSaya.php">Penjualan</a><a class="dropdown-item" role="presentation" href="./EditProfil.php">Profil</a>
                             <div class="dropdown-divider" role="presentation"></div>
                         </div>
                     </li>
@@ -64,13 +66,14 @@
                                 <div class="input-group-append"><button class="btn btn-warning" type="button" style="background-color: rgb(255,231,158);"><i class="fa fa-search"></i></button></div>
                             </div>
                         </div>
-                    </div><a href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;margin-left: 620px;margin-top: -18px;">Tentang Kami</a>
+                    </div><a href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;margin-left: 620px;margin-top: -26px;">Tentang Kami</a>
                     <ul class="nav navbar-nav ml-auto" style="height: 53px;">
                         <li class="nav-item" role="presentation"></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="help.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;">Pusat Bantuan</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;">Hubungi Kami</a><button class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;">Masuk</button>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;">Hubungi Kami</a>
+                        <button class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="login_page.php">Masuk</button>
                             <button
-                                class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;">Daftar</button>
+                                class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;"href="register_page.php">Daftar</button>
                         </li>
                     </ul>
                 </div>
@@ -98,6 +101,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Profile-Edit-Form.js"></script>
 </body>
 
 </html>
