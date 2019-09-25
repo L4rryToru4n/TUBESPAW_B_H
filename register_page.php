@@ -59,10 +59,10 @@
                                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="tgllahir_jualsapi_hari">
                                             <option value="Pilih Tanggal" selected>Tanggal</option>
                                             <?php
-                                            for($i=date('Y'); $i>1985; $i--) {
-                                                $birthdayYear = '';
+                                            for($i=date('Y'); $i>0; $i--) {
+                                                $birthday = '';
                                                 $selected = '';
-                                                if ($birthdayYear == $i) $selected = ' selected="selected"';
+                                                if ($birthday == $i) $selected = ' selected="selected"';
                                                 print('<option value="'.$i.'"'.$selected.'>'.$i.'</option>'."\n");
                                             }
                                         ?>
@@ -84,6 +84,7 @@
                                     </select>
                                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="tgllahir_jualsapi_tahun">
                                             <option selected>Tahun</option>
+                                            <!--
                                             <option value="1985">1985</option>
                                             <option value="1986">1986</option>
                                             <option value="1987">1987</option>
@@ -118,7 +119,15 @@
                                             <option value="2016">2016</option>
                                             <option value="2017">2017</option>
                                             <option value="2018">2018</option>
-                                            <option value="2019">2019</option>
+                                            <option value="2019">2019</option>-->
+                                            <?php
+                                            for($i=date('Y'); $i>1985; $i--) {
+                                                $birthdayYear = '';
+                                                $selected = '';
+                                                if ($birthdayYear == $i) $selected = ' selected="selected"';
+                                                print('<option value="'.$i.'"'.$selected.'>'.$i.'</option>'."\n");
+                                            }
+                                        ?>
                                     </select>
                             </div>
                             <button type="submit" class="btn button_form" name="simpan_jualsapi">Daftar</button>
