@@ -66,14 +66,14 @@
                                 <div class="input-group-append"><button class="btn btn-warning" type="button" style="background-color: rgb(255,231,158);"><i class="fa fa-search"></i></button></div>
                             </div>
                         </div>
-                    </div><a href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;margin-left: 620px;margin-top: -26px;">Tentang Kami</a>
+                    </div><a href="about.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;margin-left: 620px;margin-top: -26px;">Tentang Kami</a>
                     <ul class="nav navbar-nav ml-auto" style="height: 53px;">
                         <li class="nav-item" role="presentation"></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="help.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;">Pusat Bantuan</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;">Hubungi Kami</a>
-                        <button class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="login_page.php">Masuk</button>
-                            <button
-                                class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="register_page.php">Daftar</button>
+                        <a type="button" class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="login_page.php">Masuk</a>
+                            <a type="button" 
+                                class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="register_page.php">Daftar</a>
                         </li>
                     </ul>
                 </div>

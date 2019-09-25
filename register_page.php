@@ -9,9 +9,8 @@
     </head>
     <body>
             <nav class="navbar">
-                    <a class="navbar-brand" href="./">
-                        <!--<img src="https://cdn.pixabay.com/photo/2016/06/28/17/26/cow-1485012_960_720.png" width="30" height="30" class="d-inline-block align-top" alt="">-->
-                        <img src="./mockup/LOGO.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="./">
+                      <img src="./mockup/logokecil.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     </a>
             </nav>
             <div class="deret_link">

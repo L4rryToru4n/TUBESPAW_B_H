@@ -19,7 +19,7 @@
     <body>
             <nav class="navbar">
                     <a class="navbar-brand" href="./">
-                      <img src="./mockup/LOGO.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                      <img src="./mockup/logokecil.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     </a>
                     <!--
                     <a class="navbar-brand" href="./">
