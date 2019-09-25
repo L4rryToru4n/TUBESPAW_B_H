@@ -30,10 +30,10 @@ $id_user = $id_users['id'];
             <div class="responsive">
               <div class="gallery">
               
-                  <a target="_blank" href=".\detailBarang.php?id='.$data['ID_DATA'].'">
+                  <a target="_blank" href=".\detailProduk.php?id='.$data['ID_DATA'].'">
                   <img src="..\images\10\1\2.jpg" alt="Sapi Saya" width="600" height="400" onclick="return">
                   </a>
-                <div class="desc">Keterangan Sapi</div>
+                <div class="desc">'.$data['JUDUL'].'</div>
               </div>
             </div>';
           }

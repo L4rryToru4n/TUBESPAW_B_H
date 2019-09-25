@@ -22,10 +22,8 @@ if(isset($_POST['tampung'])){
     if($input){      
         $_SESSION['user'] = $id;   
         echo '<script>alert("success"); window.location = "../dashboard/tambahSapi.php?='.$id['id'].'"</script>';     
-    }else{         
-        echo '<script>alert("failed"); window.location = "../dashboard/tambahSapi.php"</script>';     
-    } 
-}else{     
+    }else{   
     echo '<script>window.history.back()</script>'; 
-} 
+    } 
+}
 ?>

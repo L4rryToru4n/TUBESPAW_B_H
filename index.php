@@ -73,7 +73,7 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html" style="font-size: 11px;padding: 7px;color: rgb(255,255,255);width: 88px;">Hubungi Kami</a>
                         <button class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="login_page.php">Masuk</button>
                             <button
-                                class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;"href="register_page.php">Daftar</button>
+                                class="btn btn-primary" type="button" style="background-color: rgb(188,151,94);height: 24px;font-size: 8px;" href="register_page.php">Daftar</button>
                         </li>
                     </ul>
                 </div>

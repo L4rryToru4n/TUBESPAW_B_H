@@ -1,15 +1,19 @@
 <?php
-	
+    session_start();
+    
     include ('../db.php');
-    $id= $_SESSION['id'];
-    $result = mysql_query("SELECT * FROM data_users where id='$id'");
-    while($row = mysql_fetch_array($result))
+
+    $id = $_SESSION['user'];
+    $id_users = $id['id'];
+
+    $result = mysqli_query($con,"SELECT * FROM data_users where id='$id_users'");
+    while($row = mysqli_fetch_assoc($result))
     { 
-      $name=$row['name'];
-      $email=$row['email'];
-      $jeniskelamin=$row['jeniskelamin'];
-      $notelp=$row['nomortelp'];
-      $tgllahir=$row['tanggallahir'];
+        $name=$row['name'];
+        $email=$row['email'];
+        $jeniskelamin=$row['jeniskelamin'];
+        $notelp=$row['nomortelp'];
+        $tgllahir=$row['tanggallahir'];
     }
     ?>
 <!DOCTYPE html>
@@ -34,8 +38,15 @@
             <td valign="top"><?php echo $email ?></td>
           </tr>
           <tr>
-            <td valign="top"><div align="left">Gender:</div></td>
-            <td valign="top"><?php echo $jeniskelamin ?></td>
+            <td valign="top"><div align="left">Gender :</div></td>
+            <td valign="top"><?php
+            if($jeniskelamin == 0){                             
+                echo 'Pria';                         
+                }else{                             
+                    echo 'Wanita';
+                }              
+            
+            ;?></td>
           </tr>
           <tr>
             <td valign="top"><div align="left">NomorTelp:</div></td>
@@ -47,9 +58,7 @@
           </tr>
         </table>
         <p align="center"><a href="index.php"></a></p>
-                                    
+        <?php echo'<td><a href="./editProfil.php?id='.$id['id'].'">Edit Profile</a>'; ?>
+
 	</body>
-	
-    
-    
 </html>

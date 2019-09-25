@@ -1,18 +1,7 @@
-<?php include '../layout/dashboard.php' ;
-
-
-// $data = $_GET['ID_DATA'];
-//Get the user's ID
-// $id_users = $_GET['id_user'];
-// $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi") or die(mysqli_error($con));
-// $user = mysqli_fetch_assoc($query);
-//Check the current user
-//  foreach($user as $users){
-
-//     echo $users . "<br>";
-
-// }
-?>  
+<?php include '../layout/dashboard.php';
+$id_users=$_SESSION['user'];
+$id_user = $id_users['id'];
+?>
 
 <!DOCTYPE html>
 
@@ -70,7 +59,9 @@
     // }         
     
     $data = $_GET['id'];
-    $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi WHERE ID_DATA = $data && ID_USERS") or die(mysqli_error($con)); 
+    $id = $data['id'];
+    
+    $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi WHERE ID_DATA = '$id' && ID_USERS = '$id_user'") or die(mysqli_error($con)); 
     if(mysqli_num_rows($query) == 0){             
         echo '<tr>
                 Tidak ada data !
@@ -122,7 +113,9 @@
                     }              
                 echo '</td>
                     <td>Kuantitas       : '.$data['BERAT'].' ekor</td>
-            </tr>';                           
+            </tr>
+            <td><a href="./editProduk.php?id='.$data['ID_DATA'].'">Edit</a>/                             
+        <a href="../proses/prosesDeleteProduk.php?id='.$data['ID_DATA'].'" onclick="return confirm(\'Yakin?\')">Hapus </a></td>';                           
     }  
     ?>
     </table>

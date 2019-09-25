@@ -79,7 +79,7 @@ div.desc {
                   <a target="_blank" href=".\detailBarang.php?id='.$data['ID_DATA'].'">
                   <img src="..\images\10\1\2.jpg" alt="Rekomendasi" width="600" height="400" onclick="return">
                   </a>
-                <div class="desc">Keterangan Sapi</div>
+                <div class="desc">'.$data['JUDUL'].'</div>
               </div>
             </div>';
           }

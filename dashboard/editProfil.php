@@ -1,8 +1,9 @@
 <?php
     include ('../db.php');
 
-    $id = $_GET['id'];
-    $query = mysqli_query($con,"SELECT * FROM pegawai WHERE id='$id'") or die(mysqli_error($con));
+    $id = $_SESSION['user'];
+    $id_users = $id['id'];
+    $query = mysqli_query($con,"SELECT * FROM data_users WHERE id='$id_users'") or die(mysqli_error($con));
 
     while($data = mysqli_fetch_array($query)){
 ?>
@@ -16,7 +17,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href=".\GD3_B_9509\style.css">
-	<title>Edit Pegawai</title>
+	<title>Edit Profil Anda</title>
     </head>
 <div id="dashboardData">
     <!-- <form id="formEmpManager" action="../proses/createEmp.php" method="post"> -->
@@ -74,15 +75,6 @@
     </form>
     </div>
 </div>
-<div class="hamburgerbar">
-		<a href="#" onclick="hamburgerFunc()">
-			<div>
-				<div class="bar topbar"></div>
-				<div class="bar middlebar"></div>
-				<div class="bar bottombar"></div>
-			</div>
-		</a>
-		</div>
 </body>
 <script src="../script/script.js"></script>
 <script>
