@@ -47,6 +47,12 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Profile-Edit-Form.js"></script>
+	<img src="sapi-coklat.jpeg" style="height: 120px;margin: 1020px;padding: 9px;margin-top: 250px;" />
+	<img src="sapi-hitam.jpg" style="height: 120px;margin: 900px;padding: 9px;margin-top: -1290px;" />
+	<img src="sapi-putih.jpeg" style="height: 126px;margin: 900px;padding: 9px;margin-top: -1090px;" />
+	<img src="1.jpg" style="height: 120px;margin: 745px;padding: 9px;margin-top: -1544px;" />
+	<img src="4.jpg" style="height: 130px;margin: -477px;padding: 13px;margin-top: -2763px;" />
+	<img src="6.jpg" style="height: 135px;margin: -144px;padding: 13px;margin-top: -2180px;" />
 </body>
 
 </html>
