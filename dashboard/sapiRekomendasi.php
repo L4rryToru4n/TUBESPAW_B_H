@@ -1,4 +1,3 @@
-<?php include '../layout/dashboard.php'; ?>
 <!DOCTYPE html>
 
 <html>
@@ -7,8 +6,8 @@
 div.gallery {
   border: 1px solid #ccc;
   margin-left:10px;
+  margin-top: 200px;
   bottom: auto;
-  margin-top:350px;
 }
 
 div.gallery:hover {
@@ -61,45 +60,32 @@ div.desc {
 <!-- 
 <h2>Responsive Image Gallery</h2>
 <h4>Resize the browser window to see the effect.</h4> -->
+<input type="hidden" name="ID_DATA" value="<?php echo $data['ID_DATA'] ?>">
+<!-- <input type="hidden" name="ID_PRODUK" value="<?php echo $data['ID_PRODUK'] ?>">
+<input type="hidden" name="ID_USERS" value="<?php echo $data['ID_USERS'] ?>"> -->
+<?php         
+    include('../db.php');
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href=".\detailBarang.php">
-      <img src="..\images\1.jpg" alt="About Us" width="600" height="400">
-    </a>
-    <div class="desc">Keterangan Sapi</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href=".\detailBarang.php">
-      <img src="..\images\2.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Keterangan Sapi</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href=".\detailBarang.php">
-      <img src="..\images\3.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Keterangan Sapi</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href=".\detailBarang.php">
-      <img src="..\images\4.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Keterangan Sapi</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
+  
+      $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi") or die(mysqli_error($con));
+      if(mysqli_num_rows($query) == 0){             
+          echo 'Tidak ada data !';            
+      }else{             
+          while($data = mysqli_fetch_assoc($query)){                 
+            echo'
+            <div class="responsive">
+              <div class="gallery">
+              
+                  <a target="_blank" href=".\detailBarang.php?id='.$data['ID_DATA'].'">
+                  <img src="..\images\10\1\2.jpg" alt="Rekomendasi" width="600" height="400" onclick="return">
+                  </a>
+                <div class="desc">Keterangan Sapi</div>
+              </div>
+            </div>';
+          }
+      }  
+      
+    ?> 
 
 <!-- 
 <div style="padding:6px;">
