@@ -14,7 +14,7 @@ if(isset($_POST['login_jualsapi'])){
             session_start();
             $_SESSION['isLogin'] = true;
             $_SESSION['user'] = $user;
-            echo'<script>alert("succes"); window.location = "../dashboard"</script>';
+            echo'<script>alert("succes"); window.location = "../dashboard/index.php?id='.$user['id'].'"</script>';
         }else{
             echo'<script>alert("Email or password invalid!"); window.location = "../login.page.php"</script>';
         }

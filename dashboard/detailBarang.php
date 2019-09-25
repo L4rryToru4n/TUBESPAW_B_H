@@ -1,4 +1,19 @@
-<?php include '../layout/dashboard.php' ;?>
+<?php include '../layout/dashboard.php' ;
+
+
+// $data = $_GET['ID_DATA'];
+//Get the user's ID
+// $id_users = $_GET['id_user'];
+// $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi") or die(mysqli_error($con));
+// $user = mysqli_fetch_assoc($query);
+//Check the current user
+//  foreach($user as $users){
+
+//     echo $users . "<br>";
+
+// }
+?>  
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,88 +26,112 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="..\css\style.css">
-    <title>Employee Manager</title>
+    <title></title>
+
+    <style>
+    </style>
 </head>   
     <div>
-        <h2>Judul Barang </h2>
+        <h2></h2>
         <table class="table table-borderless">    
     <thead>        
-        <tr>                 
-            <td>Ras</td>
-            <td>Harga</td>
-            <td>Deskripsi</td> 
-        </tr>
-        <tr>
-            <td>Jenis Sapi</td>                           
-            <td>Umur</td> 
-        </tr>                 
-        <tr>
-            <td>Jenis Kelamin</td>
-            <td>Berat</td>
-            
-        </tr>
-        <tr>
-            <td>Warna</td>
-            <td>Kuantitas</td>
+        <tr>                    
             
         </tr>          
 
     </thead>
 
+    <?php
 
-    <?php         
+    // $strSQL_result  = mysqli_query($con,"select `LIKE`,`UNLIKE` from `dataproduk_sapi'");
+    // $row            = mysqli_fetch_array($strSQL_result);
     
-    $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi where ID_USERS = && ID_PRODUK =") or die(mysqli_error($con)); 
+    // $like       = $row['LIKE'];
+    // $unlike     = $row['UNLIKE'];
+    
+    // if($_POST)
+    // {
+    //     if(isset($_COOKIE["counter_gang"]))
+    //     {
+    //         echo "-1";
+    //         exit;
+    //     }
+    //     setcookie("counter_gang", "liked", time()+3600*24, "/like-unlike-in-php-mysql/", ".demo.phpgang.com");
+    //     if(mysqli_real_escape_string($connection,$_POST['op']) == 'like')
+    //     {
+    //         $update = "`like`=`like`+1";
+    //     }
+    //     if(mysqli_real_escape_string($connection,$_POST['op']) == 'un-like')
+    //     {
+    //         $update = "`un-like`=`un-like`+1";
+    //     }
+    //     mysqli_query($con,"update `dataproduk_sapi` set $update");
+    //     echo 1;  
+    // }         
+    
+    $data = $_GET['id'];
+    $query = mysqli_query($con,"SELECT * FROM dataproduk_sapi WHERE ID_DATA = $data && ID_USERS") or die(mysqli_error($con)); 
     if(mysqli_num_rows($query) == 0){             
         echo '<tr>
                 Tidak ada data !
             </tr>';        
     }else{              
-        while($data = mysqli_fetch_assoc($query)){                 
-            echo '<tr> 
-            <h2>'.$data['JUDUL SAPI'].'</h2>                        
-            <td>'.$no.'</td>                         
-            <td>'.$data['RAS'].'</td>                         
-            <td>'.$data['HARGA'].'</td>                                                 
-            <td>'.$data['DESKRIPSI'].'</td>                         
-            <td>'; if($data['jenisKelamin'] == 0){                             
-                echo 'Laki-laki';                         
-                }else{                             
-                    echo 'Perempuan';                         
-                }             
-        echo '</td>
-        <td>'; if($data['pendidikan'] == 0){                             
-            echo 'SMA/SMK';                         
-            }else if($data['pendidikan'] == 1){                             
-                echo 'D3';                         
-            }else if($data['pendidikan'] == 2){                             
-                echo 'S1';
-            }else if($data['pendidikan'] == 3){                             
-                echo 'S2';
-            }else if($data['pendidikan'] == 4){                             
-                echo 'S3'; 
-            }            
-    echo '</td>
-        <td>'.$data['Ipk'].'</td>
-        <td>'; if($data['cumlaude'] == 0){                             
-            echo 'Ya';                         
-            }else{                             
-                echo 'Tidak';                         
-            }             
-    echo '</td>
-        <td>'.$data['alamat'].'</td>
-        <td>'.$data['kota'].'</td>                         
-        <td><a href="./editPegawai.php?id='.$data['id'].'">Edit </a>/                             
-        <a href="../proses/deletePegawai.php?id='.$data['id'].'" onclick="return confirm(\'Yakin?\')">Hapus </a></td>
-        </tr>';                 
-        $no++;             
-        }         
-    }     
+        $data = mysqli_fetch_assoc($query);                 
+            echo 
+            '<h2>'.$data['JUDUL'].'</h2>
+            <tr>                                               
+                <td>Ras            : '; if($data['RAS'] == 0){                             
+                    echo 'Sapi Ternak';                         
+                    }else if($data['RAS'] == 1){                             
+                        echo 'Sapi Potong';                         
+                    }             
+            echo '</td>                         
+                <td>Harga          : Rp '.$data['HARGA'].'</td>                                                 
+                <td>        '.$data['DESKRIPSI'].'</td>
+            </tr>
+            <tr>
+                <td>Jenis Sapi     : '; if($data['JENIS'] == 0){                             
+                    echo 'Limousine';                         
+                    }else if($data['JENIS'] == 1){                             
+                        echo 'Sapi Brahman';                         
+                    }else if($data['JENIS'] == 2){                             
+                        echo 'Sapi Simmental';                         
+                    }              
+            echo '</td>
+                    <td>Umur       : '.$data['UMUR'].' bulan</td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin     : '; if($data['JENIS_KELAMIN'] == 0){                             
+                    echo 'Jantan';                         
+                    }else{                             
+                        echo 'Betina';
+                    }              
+            echo '</td>
+                    <td>Berat       : '.$data['BERAT'].' Kg</td>
+            </tr>
+            <tr>
+                <td>Warna           : '; if($data['WARNA'] == 0){                             
+                    echo 'Coklat';                         
+                    }else  if($data['WARNA'] == 1){                             
+                        echo 'Putih';
+                    }else  if($data['WARNA'] == 2){                             
+                        echo 'Hitam';
+                    }else{                             
+                        echo 'Abu-abu';
+                    }              
+                echo '</td>
+                    <td>Kuantitas       : '.$data['BERAT'].' ekor</td>
+            </tr>';                           
+    }  
     ?>
     </table>
     </div> 
+    <!-- <div class="grid">
+                <span id="status"></span><br>
+                <input type="button" value="<?php echo $like; ?>" class="button_like" id="linkeBtn" img src="..\images\up.png">
+                <input type="button" value="<?php echo $unlike; ?>" class="button_unlike" id="unlinkeBtn" img src="..\images\down.png" "https://www.flaticon.com/authors/freepik"/>
+            </div> -->
         </body> 
-        
-    <script src="../script/script.js"></script> <script> var elm = document.getElementById("listBuku").classList.add("isActive")
+    <script src="../script/script.js"></script> <script> var elm = document.getElementById("detailBarang").classList.add("isActive")
     </script> 
 </html>
